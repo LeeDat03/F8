@@ -73,6 +73,10 @@ html{
 .mt-16{
     margin-top: 16px;
 }
+
+.mt-32{
+    margin-top: 32px;
+}
 /* Main */
 /* #main {
     overflow: hidden;
@@ -88,7 +92,6 @@ html{
     width: 100%;
     top: 0;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav{
@@ -134,14 +137,15 @@ html{
 
 }
 
-#nav li:hover .subnav{
-    display: block;
-}
 
 #nav .subnav li:hover a,
 #nav >li:hover > a{
     color: black;
     background-color: #ccc;
+}
+
+#nav li:hover .subnav{
+    display: block;
 }
 
 #nav .nav-arrow-down{
@@ -253,7 +257,7 @@ html{
 
 
 #content .member-list{
-    padding: 32px 0;
+    padding-top: 32px;
     text-align: center;
     overflow: hidden;
 }
@@ -308,7 +312,7 @@ html{
 
 /* Places */
 .place-list{
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img{
