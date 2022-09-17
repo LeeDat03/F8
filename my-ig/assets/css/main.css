@@ -19,6 +19,8 @@ a{
     color: #000;
 }
 
+/* Header */
+
 header{
     width: 100%;
     border-bottom: 1px solid rgb(219,219,219);
@@ -43,11 +45,9 @@ header{
     justify-content: center;
 }
 
-.head-logo h1{
-    font-family: cursive;
-    font-weight: 200;
-    font-size: 26px;
-    line-height: 40px;
+.head-logo img{
+    width: 120px;
+    height: 40px;
 }
 
 .head-logo i{
@@ -106,7 +106,7 @@ input:focus{
 }
 
 .head-opt .btn:hover i{
-    opacity: 0.7;
+    color: black;
     transition: 0.3s all;
 }
 
@@ -114,21 +114,25 @@ input:focus{
     color: black ;
 }
 
+/* Content */
 .content{
     margin-top: 64px;
     background-color: #FAFAFA;
-    height: 1000px;
+    min-height: 1000px;
 }
 
+
+/* Navigation */
 nav{
     width: 500px;
-    position: absolute;
+    position: relative;
     top: 24px;
     margin-left: 400px;
-    margin-bottom: 20px;
+    margin-bottom: 44px;
     border: 1px solid rgb(219,219,219);
     background-color: white;
     border-radius: 15px;
+    
 }
 
 .nav-section{
@@ -157,13 +161,138 @@ nav .nav-story{
     height: 72px;
 }
 
-
-.nav-story p{
-    font-size: 12px;
-    padding-top: 3px;
+.nav-img:hover{
+    background: linear-gradient(to right, #1e9600, #fff200, #ff0000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: 0.5s all;
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 
+.nav-story p{
+    font-size: 12px;
+    padding-top: 5px;
+}
 
+/* Status */
+.status{
 
+    margin-bottom: 15px;
+    width: 500px;
+    margin-left: 400px;
+    border: 1px solid rgb(219,219,219);
+    background-color: white;
+    border-radius: 15px;
+}
 
+.status-infor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-user{
+    display: flex;
+    padding: 9px;
+    max-height: 60px;
+}
+
+.status-user img{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid rgb(219,219,219);
+}
+
+.status-user h3{
+   margin-left: 8px;
+   font-size: 14px;
+   display: inline-block;
+   line-height: 38px;
+}
+
+.status-infor i{
+    margin-right: 25px;
+    font-size: 20px;
+    align-self: center;
+}
+
+.status .status-img img{
+    width: 498px;
+    height: 600px;
+}
+
+.status-react i{
+    margin: 8px 8px;
+    font-size: 24px;
+    color: rgb(117, 117, 117);
+}
+
+.status-react a{
+    display: inline-block;
+}
+
+.status-emoji{
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-right i{
+    margin-right: 25px;
+}
+
+.status-react a:hover i{
+    color: #ED4956;
+    transition: 0.3s all;
+}
+
+.status-react .status-like{
+    font-size: 14px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.status-paragraph{
+    width: 450px;
+    font-size: 14px;
+    margin-left: 8px;
+    margin-bottom: 16px;
+}
+
+.status-comment{
+    padding: 16px 0;
+    border-top: 1px solid rgb(219,219,219);
+    display: flex;
+    text-align: center;
+    /* justify-content: space-between; */
+}
+
+.status-comment i{
+    padding: 0 8px;
+    font-size: 26px;
+    color: rgb(117, 117, 117);
+}
+
+.status-comment i:hover{
+    color: rgb(255, 224, 50);
+}
+
+.status-comment .comment{
+    border: none;
+    font-size: 14px;
+    width: 77%;
+    margin-left: 8px;
+}
+
+.status-comment button{
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 148, 246,0.3);
+}
+
+.status-comment button:hover{
+    color: rgba(0, 148, 246,1);
+    cursor: pointer;
+}
